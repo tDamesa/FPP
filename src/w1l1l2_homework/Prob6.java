@@ -20,10 +20,7 @@ public class Prob6 {
 		}
 		// removing the null values from noduplicates array and store them in finall array
 		String[] finall = new String[j + 1];
-		for (int i = 0; i <= j; i++) {
-			finall[i] = noDuplicate[i];
-		}
-		System.out.println(Arrays.toString(noDuplicate));
+		System.arraycopy(noDuplicate, 0, finall, 0,j+1);
 		System.out.println(Arrays.toString(finall));
 	}
 
