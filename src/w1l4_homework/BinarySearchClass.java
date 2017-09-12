@@ -28,5 +28,4 @@ public class BinarySearchClass {
 
 	}
 }
-/*Output:
--1*/
+//Output:0
