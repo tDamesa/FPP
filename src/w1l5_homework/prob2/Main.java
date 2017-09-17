@@ -16,6 +16,7 @@ public class Main {
 		System.out.println("Do see the sum of all Professor salary,  sum of all secretary salary and all salaries in the department? y/n ");
 		String input = in.next();
 
+		
 		double totalProfessorSalary = 0;
 		double totalSecratarySalary = 0;
 

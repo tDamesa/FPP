@@ -17,9 +17,12 @@ public class BasePlusCommisionEmployee extends CommissionEmployee {
 	public void setBaseSalary(double baseSalary) {
 		this.baseSalary = baseSalary;
 	}
+	int x=9;
+
 	@Override
 	public double getPaymentAmount() {
 		return baseSalary + (getGrossSales() * getCommisionRate());
+		
 	}
 	@Override
 	public String toString() {

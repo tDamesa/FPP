@@ -1,5 +1,8 @@
 package w1l5_homework.prob4;
 
+
+import w1l5_homework.prob3.Figure;
+
 public class Driver {
 
 	public static void main(String[] args) {
@@ -12,6 +15,7 @@ public class Driver {
 
 		for (Payable x : payable) {
 			totSalary += x.getPaymentAmount();
+		
 		}
 		System.out.println(totSalary);
 		for (Payable x : payable) {

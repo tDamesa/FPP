@@ -1,5 +1,6 @@
 package w1l5_homework.prob3;
 
+
 public class Driver {
 
 	public static void main(String[] args) {
@@ -7,6 +8,7 @@ public class Driver {
 		
 		for (Figure x : fig) {
 			x.getFigure();
+		
 
 		}
 		System.out.println();
