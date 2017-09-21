@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class ArrayQueueImpl {
 	private int[] arr = new int[4];
 	private int front = -1;
-	private int rear =-1;
+	private int rear = -1;
 	private int size = 0;
 
 	public int peek() {
@@ -24,7 +24,7 @@ public class ArrayQueueImpl {
 			resize();
 		if (front == -1)
 			front = front + 1;
-		arr[rear+1] = obj;
+		arr[rear + 1] = obj;
 		rear++;
 		size++;
 	}
@@ -35,7 +35,7 @@ public class ArrayQueueImpl {
 		int temp = arr[front];
 		front++;
 		size--;
-		//rear--;
+		// rear--;
 		return temp;
 
 	}
@@ -63,7 +63,14 @@ public class ArrayQueueImpl {
 	}
 
 	public void print() {
-		System.out.println(Arrays.toString(arr) + "front: " + front + " " + "rear: " + rear);
+		System.out.print("[");
+
+		for (int i = front; i < rear; i++) {
+
+			System.out.print(arr[i] + ",");
+
+		}
+		System.out.println(arr[rear]+ "]");
 	}
 
 }
